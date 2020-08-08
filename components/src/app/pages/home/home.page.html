@@ -1,9 +1,20 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>home</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header title="Home page"></app-header>
 
 <ion-content>
+  <ion-list>
+    <ion-item *ngFor="let item of items" [routerLink]="item.link" detail>
+      <ion-icon name="{{ item.icon }}" slot="start"></ion-icon>
+      <ion-label>{{item.name}}</ion-label>
+    </ion-item>
+    <!-- List Header with Button -->
+    <ion-list-header>
+      <ion-label>New This Week</ion-label>
+      <ion-button>See All</ion-button>
+    </ion-list-header>
+  </ion-list>
 
+  <ion-button color="primary" shape="round" expand="full" routerLink="/alert">alerts</ion-button>
+  <ion-button color="secondary" shape="round" expand="full" routerLink="/action-sheet">
+    action sheet
+  </ion-button>
 </ion-content>

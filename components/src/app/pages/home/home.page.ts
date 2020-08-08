@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePage implements OnInit {
 
+  items: Item[] = [
+    {icon: 'attach-outline', name: 'alert', link: '/alert'},
+    {icon: 'airplane-outline', name: 'action-sheet', link: '/action-sheet'}
+  ];
+
   constructor() { }
 
   ngOnInit() {
   }
 
+}
+
+interface Item {
+  icon: string;
+  name: string;
+  link: string;
 }
