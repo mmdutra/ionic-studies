@@ -1,0 +1,18 @@
+<app-header title="Ranges page"></app-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-range min="0" max="200" color="secondary" pin="true">
+        <ion-label slot="start">:(</ion-label>
+        <ion-label slot="end">:)</ion-label>
+      </ion-range>
+    </ion-item>
+    <ion-item>
+      <ion-range min="1000" max="2000" step="100" snaps="true" ticks="true" color="tertiary">
+        <ion-label slot="start"><ion-icon name="star-outline"></ion-icon></ion-label>
+        <ion-label slot="end"><ion-icon name="star"></ion-icon></ion-label>
+      </ion-range>
+    </ion-item>
+  </ion-list>
+</ion-content>

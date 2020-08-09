@@ -1,0 +1,6 @@
+<app-header title="Dates page"></app-header>
+
+<ion-content>
+  <!-- value="{{ now | date:'yyyy-MM-dd' }}"  -->
+  <ion-datetime color="primary" display-format="DD/MM/YYYY" cancel-text="Cancelar" [ngModel]="now.toISOString()" (ionChange)="onClickDate($event)" placeholder="Date"></ion-datetime>
+</ion-content>

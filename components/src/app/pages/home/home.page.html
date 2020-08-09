@@ -12,9 +12,14 @@
       <ion-button>See All</ion-button>
     </ion-list-header>
   </ion-list>
-
-  <ion-button color="primary" shape="round" expand="full" routerLink="/alert">alerts</ion-button>
-  <ion-button color="secondary" shape="round" expand="full" routerLink="/action-sheet">
-    action sheet
-  </ion-button>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button color="success" shape="round" expand="full" routerLink="/alert">alerts</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button color="danger" shape="round" expand="full" routerLink="/action-sheet">action sheet</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

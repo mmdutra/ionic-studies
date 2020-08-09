@@ -22,6 +22,18 @@ const routes: Routes = [
   {
     path: 'cards',
     loadChildren: () => import('./pages/cards/cards.module').then( m => m.CardsPageModule)
+  },
+  {
+    path: 'dates',
+    loadChildren: () => import('./pages/dates/dates.module').then( m => m.DatesPageModule)
+  },
+  {
+    path: 'ranges',
+    loadChildren: () => import('./pages/ranges/ranges.module').then( m => m.RangesPageModule)
+  },
+  {
+    path: 'grids',
+    loadChildren: () => import('./pages/grids/grids.module').then( m => m.GridsPageModule)
   }
 ];
 

@@ -1,14 +1,10 @@
 <app-header [title]="title"></app-header>
 
 <ion-content>
-  <ion-text >
-    Notificações <ion-badge>15</ion-badge>
-  </ion-text>
   <ion-list>
     <ion-item-sliding>
       <ion-item-options side="start">
-        <ion-item-option (click)="favorite()">Favorite</ion-item-option>
-        <ion-item-option color="danger" (click)="share()">Share</ion-item-option>
+        <ion-item-option color="success" (click)="favorite()">Favorite</ion-item-option>
       </ion-item-options>
   
       <ion-item>
@@ -16,7 +12,7 @@
       </ion-item>
   
       <ion-item-options side="end">
-        <ion-item-option (click)="presentAlert()">Unread</ion-item-option>
+        <ion-item-option color="danger" (click)="presentAlert()">Unread</ion-item-option>
       </ion-item-options>
     </ion-item-sliding>
   

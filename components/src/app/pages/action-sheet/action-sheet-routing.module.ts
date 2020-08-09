@@ -9,11 +9,11 @@ const routes: Routes = [
     component: ActionSheetPage,
     children: [
       {
-        path: 'alert',
+        path: '/alert',
         loadChildren: '../alert/alert.module#AlertPageModule'
       },
       {
-        path: 'home',
+        path: '/home',
         loadChildren: '../home/home.module#HomePageModule'
       }
     ]
