@@ -1,14 +1,14 @@
 import { DataService } from './../../services/data.service';
+import { MenuItem } from './../../interfaces/MenuItem';
 import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'src/app/interfaces/MenuItem';
 import { Observable } from 'rxjs';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.page.html',
-  styleUrls: ['./home.page.scss'],
+  selector: 'app-menu',
+  templateUrl: './menu.component.html',
+  styleUrls: ['./menu.component.scss'],
 })
-export class HomePage implements OnInit {
+export class MenuComponent implements OnInit {
 
   items: Observable<MenuItem[]>;
 
@@ -18,10 +18,4 @@ export class HomePage implements OnInit {
     this.items = this.service.getMenu();
   }
 
-}
-
-interface Item {
-  icon: string;
-  name: string;
-  link: string;
 }
