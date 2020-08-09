@@ -5,5 +5,7 @@
     {"icon": "calendar-outline", "name": "date", "link": "/dates"},
     {"icon": "git-commit-outline", "name": "ranges", "link": "/ranges"},
     {"icon": "list-outline", "name": "grids", "link": "/grids"},
-    {"icon": "person-outline", "name": "inputs", "link": "/inputs"}
+    {"icon": "person-outline", "name": "inputs", "link": "/inputs"},
+    {"icon": "chatbubble-ellipses-outline", "name": "toasts", "link": "/toasts"},
+    {"icon": "code-outline", "name": "slider", "link": "/slider"}
 ]

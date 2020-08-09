@@ -38,6 +38,14 @@ const routes: Routes = [
   {
     path: 'inputs',
     loadChildren: () => import('./pages/inputs/inputs.module').then( m => m.InputsPageModule)
+  },
+  {
+    path: 'toasts',
+    loadChildren: () => import('./pages/toasts/toasts.module').then( m => m.ToastsPageModule)
+  },
+  {
+    path: 'slider',
+    loadChildren: () => import('./pages/slider/slider.module').then( m => m.SliderPageModule)
   }
 ];
 

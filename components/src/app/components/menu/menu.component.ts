@@ -1,5 +1,5 @@
 import { DataService } from './../../services/data.service';
-import { MenuItem } from './../../interfaces/MenuItem';
+import MenuItem from './../../interfaces/MenuItem';
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 
