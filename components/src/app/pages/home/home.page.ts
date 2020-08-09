@@ -9,7 +9,8 @@ export class HomePage implements OnInit {
 
   items: Item[] = [
     {icon: 'attach-outline', name: 'alert', link: '/alert'},
-    {icon: 'airplane-outline', name: 'action-sheet', link: '/action-sheet'}
+    {icon: 'airplane-outline', name: 'action-sheet', link: '/action-sheet'},
+    {icon: 'people-outline', name: 'cards', link: '/cards'}
   ];
 
   constructor() { }
