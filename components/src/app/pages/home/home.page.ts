@@ -1,6 +1,6 @@
 import { DataService } from './../../services/data.service';
 import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'src/app/interfaces/MenuItem';
+import MenuItem from 'src/app/interfaces/MenuItem';
 import { Observable } from 'rxjs';
 
 @Component({
