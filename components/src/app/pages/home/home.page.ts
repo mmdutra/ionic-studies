@@ -13,7 +13,8 @@ export class HomePage implements OnInit {
     {icon: 'people-outline', name: 'cards', link: '/cards'},
     {icon: 'calendar-outline', name: 'date', link: '/dates'},
     {icon: 'git-commit-outline', name: 'ranges', link: '/ranges'},
-    {icon: 'list-outline', name: 'grids', link: '/grids'}
+    {icon: 'list-outline', name: 'grids', link: '/grids'},
+    {icon: 'person-outline', name: 'inputs', link: '/inputs'}
   ];
 
   constructor() { }

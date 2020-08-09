@@ -1,0 +1,45 @@
+<app-header title="Inputs page"></app-header>
+
+<ion-content>
+  <ion-grid>
+      <form (ngSubmit)="onSubmit()">
+        <ion-row>
+          <ion-col>
+            <ion-item>
+              <ion-label position="floating">First name</ion-label>
+              <ion-input type="number" [(ngModel)]="user.firstName" name="firstname"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-item>
+              <ion-label position="floating">Last name</ion-label>
+              <ion-input type="text" [(ngModel)]="user.lastName" name="lastname"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-item>
+              <ion-label position="floating">Birthday</ion-label>
+              <ion-datetime display-format="DD/MM/YYYY" cancel-text="Cancelar" [(ngModel)]="user.birthday" name="birthday"></ion-datetime>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-item>
+              <ion-label position="floating">Notes</ion-label>
+              <ion-textarea [(ngModel)]="user.note" name="note"></ion-textarea>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-button type="submit" color="success" expand="full" shape="round">Save</ion-button>
+          </ion-col>
+        </ion-row>
+      </form>
+  </ion-grid>
+</ion-content>
